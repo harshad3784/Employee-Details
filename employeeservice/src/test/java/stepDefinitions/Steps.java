@@ -204,7 +204,6 @@ public class Steps {
 		System.out.println("Create Employee =" + response.asString());
 
 		//Response = response.getStatusCode();
-		//Response = response.getStatusCode();
 		ResponseBody =response.asString();
 
 		
@@ -213,7 +212,7 @@ public class Steps {
 	
 	@Then("^Employee details should be deleted$")
 	public void employee_details_should_be_deleted(DataTable arg1) throws Throwable {
-		List<List<String>> data = arg1.raw();
+		/*List<List<String>> data = arg1.raw();
 		String employeename = data.get(0).get(1);
 		String key = EmpIDKey;
 		RestAssured.baseURI = "http://localhost:8081/employeeservice/v2/employee";
@@ -224,6 +223,8 @@ public class Steps {
 		requestParams.put("employeename", employeename);
 
 		request.body(requestParams.toString());
-		Response response = request.delete();
+		Response response = request.delete();*/
 
-}}
+}
+
+}
